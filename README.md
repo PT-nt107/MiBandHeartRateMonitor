@@ -2,7 +2,7 @@
 
 A simple heart rate monitoring desktop application for Mi Band devices, inspired by Tnze's Rust implementation [MiBand Heart Rate Demo](https://github.com/Tnze/miband-heart-rate) but with Python implementation and a tkinter GUI.
 
-小米手环的简单心率监测桌面应用，参考自[Tnze的Rust实现](https://github.com/Tnze/miband-heart-rate)，采用Python实现并添加图形界面。
+小米手环的简单心率监测桌面应用，参考自[Tnze的Rust实现MiBand Heart Rate Demo](https://github.com/Tnze/miband-heart-rate)，采用Python实现并添加图形界面。
 
 ## Features | 功能特点
 
@@ -18,7 +18,7 @@ A simple heart rate monitoring desktop application for Mi Band devices, inspired
 
 ### Requirements | 环境要求
 - Bluetooth 4.0+ adapter
-- Mi Band 4/5/6/7 device
+- Mi Band 4/5/6/7 device (with HeartRateBroadcast Turned on)
 
 ### Setup | 配置步骤
 ```bash
@@ -31,7 +31,7 @@ pip install -r requirements.txt
 ### Basic Operation | 基本操作
 1. **Connect Device**  
    **连接设备**
-   Wear your Mi Band and ensure Bluetooth is enabled  
+   Wear your Mi Band and ensure Bluetooth is enabled 
    佩戴手环并确保蓝牙已开启(建议在手环上启用运动模式)
 
 2. **Start Application**  
@@ -61,19 +61,6 @@ timestamp,heart_rate
 2025-03-04T22:58:10.088993,74
 ```
 
-## Acknowledgements | 致谢
-
-- **Original Rust Implementation**  
-  Tnze's MiBand Heart Rate Demo
-  [https://github.com/Tnze/miband-heart-rate](https://github.com/Tnze/miband-heart-rate)
-
-- **Bleak Library**  
-  Bluetooth Low Energy platform Agnostic Klient  
-  [https://github.com/hbldh/bleak](https://github.com/hbldh/bleak)
-
-## License | 许可证
-MIT License © 2025 Mitocdex
-
 ##  | 踩坑
 ~~pybluez is not support new version bluetooth protocol~~
 ~~## install pybluez on windows~~
@@ -91,3 +78,16 @@ python setup.py install
 cd C:\pathToYourWDK\Lib\10.0.22621.0\um\x64
 mklink IRPROPS.LIB bthprops.lib
 ```
+
+## Acknowledgements | 致谢
+
+- **Original Rust Implementation**  
+  Tnze's MiBand Heart Rate Demo
+  [https://github.com/Tnze/miband-heart-rate](https://github.com/Tnze/miband-heart-rate)
+
+- **Bleak Library**  
+  Bluetooth Low Energy platform Agnostic Klient  
+  [https://github.com/hbldh/bleak](https://github.com/hbldh/bleak)
+
+## License | 许可证
+MIT License © 2025 Mitocdex|PT-nt107
